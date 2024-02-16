@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+ <TextView
+     android:id="@+id/textView2"
+     android:layout_width="247dp"
+     android:layout_height="0dp"
+     android:layout_marginTop="45dp"
+     android:layout_marginBottom="119dp"
+     android:fontFamily="sans-serif-condensed-medium"
+     android:text="CALCULADORA"
+     android:textColor="#020202"
+     android:textSize="40sp"
+     app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal2"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.496"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.068" />
+
+ <TextView
+     android:id="@+id/textView"
+     android:layout_width="99dp"
+     android:layout_height="28dp"
+     android:text="Resultado"
+
+     android:textSize="20sp"
+     app:layout_constraintBottom_toTopOf="@+id/button"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2"
+     app:layout_constraintVertical_bias="0.802" />
+
+ <EditText
+     android:id="@+id/editTextNumberDecimal"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:ems="10"
+     android:inputType="numberDecimal"
+     app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal2"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+ <Button
+     android:id="@+id/button3"
+     android:layout_width="278dp"
+     android:layout_height="0dp"
+     android:layout_marginBottom="16dp"
+     android:text="MULTIPLICACION"
+     app:layout_constraintBottom_toTopOf="@+id/button4"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+ <Button
+     android:id="@+id/button"
+     android:layout_width="278dp"
+     android:layout_height="0dp"
+     android:layout_marginBottom="20dp"
+     android:onClick="clickSumar"
+     android:text="SUMA"
+     app:layout_constraintBottom_toTopOf="@+id/button2"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2" />
+
+ <Button
+     android:id="@+id/button2"
+     android:layout_width="276dp"
+     android:layout_height="0dp"
+     android:layout_marginBottom="14dp"
+     android:text="RESTA"
+     app:layout_constraintBottom_toTopOf="@+id/button3"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/button" />
+
+ <Button
+     android:id="@+id/button4"
+     android:layout_width="278dp"
+     android:layout_height="0dp"
+     android:layout_marginStart="68dp"
+     android:layout_marginBottom="111dp"
+     android:text="DIVISION"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+ <EditText
+     android:id="@+id/editTextNumberDecimal2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="109dp"
+     android:ems="10"
+
+     android:inputType="numberDecimal"
+
+     android:textColor="@color/black"
+     app:layout_constraintBottom_toTopOf="@+id/button"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
